@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<title>Font Fun</title>
+	<style>
+			* {
+					box-sizing: border-box;
+			}
+			html,
+			body {
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					margin:0px;
+			}
+			#preview, #snap {
+				background-color: #30429A;
+			}
+	</style>
+</head>
+
+<body>
+	<div style="position:absolute;top:820px">
+	<label>Strength <input type="range" min="0" max="100" value="0" oninput="snapStrengthChanged(this)"/><span id="snapStrength">0</span></label>
+	<label>Distance<input type="range" min="1" max="100" value="1" oninput="snapDistanceChanged(this)"/><span id="snapDistance">1</span></label>
+	<label>X<input type="range" min="-100" max="100" value="0" oninput="snapXChanged(this)"/><span id="snapX">0</span></label>
+	<label>Y<input type="range" min="-100" max="100" value="0" oninput="snapYChanged(this)"/><span id="snapY">0</span></label>
+</div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
+<script src="js/sketch.js"></script>
+
+</html>
